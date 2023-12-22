@@ -1,7 +1,7 @@
 import React from "react";
 import { tw } from "twind";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faGithub, faSpotify, faTwitter, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faGithub, faSpotify, faTwitter, faGoogle} from '@fortawesome/free-brands-svg-icons';
 
 export default function App() {
     return (
@@ -38,6 +38,10 @@ export default function App() {
                         icon={faTwitter}
                         href="https://twitter.com/leatbabies"
                         text="x/twitter"
+                    />
+                     <Link
+                        href="https://portfolio-marshennikovaolgas-projects.vercel.app/"
+                        text="&#x1F90D; portfolio (in progress)"
                     />
                 </div>
             </div>
