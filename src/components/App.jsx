@@ -10,7 +10,7 @@ export default function App() {
                 <h1 className={tw`text-4xl font-regular mb-4`}
                 style={{ userSelect: 'none' }}>Hey there, I'm Olya</h1>
                 <p className={tw`text-lg mb-3`}
-                style={{ userSelect: 'none' }}>currently in Istanbul</p>
+                style={{ userSelect: 'none' }}>currently in St. Petersburg</p>
                 <p className={tw`text-lg mb-8`}
                 style={{ userSelect: 'none' }}>Find me on my socials 🌸</p>
                 <div className={tw`text-white flex flex-col`}>
