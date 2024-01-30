@@ -15,14 +15,14 @@ export default function App() {
                 style={{ userSelect: 'none' }}>Find me on my socials 🌸</p>
                 <div className={tw`text-white flex flex-col`}>
                     <Link
-                        icon={faGoogle}
-                        href="mailto:olyamrshn@gmail.com"
-                        text="work-related email"
-                    />
-                    <Link
                         icon={faInstagram}
                         text="inst*gram"
                         href="https://www.instagram.com/llleatbabies?igshid=MzRlODBiNWFlZA%3D%3D"
+                    />
+                    <Link
+                        icon={faGoogle}
+                        href="mailto:olyamrshn@gmail.com"
+                        text="work-related email"
                     />
                     <Link
                         text="github"
@@ -38,10 +38,6 @@ export default function App() {
                         icon={faTwitter}
                         href="https://twitter.com/leatbabies"
                         text="x/twitter"
-                    />
-                     <Link
-                        href="https://portfolio-marshennikovaolgas-projects.vercel.app/"
-                        text="&#x1F90D; portfolio (in progress)"
                     />
                 </div>
             </div>
