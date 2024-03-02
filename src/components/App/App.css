@@ -1,0 +1,15 @@
+.link-item {
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.link-item.show {
+    opacity: 1;
+}
+
+@media (max-width: 500px) {
+    .link-item {
+        width: 100%;
+    }
+}
