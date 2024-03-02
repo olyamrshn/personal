@@ -3,8 +3,9 @@ import './App.css'
 import AnimatedLink from '../AnimatedLink'
 import { useState, useEffect } from 'react'
 import { faInstagram, faGithub, faSpotify, faTwitter, faGoogle } from '@fortawesome/free-brands-svg-icons'
-import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight'
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
+import rightImage from '../../images/right.png';
+import bottomImage from '../../images/bottom.png';
+
 
 export default function App() {
     const [showLinks, setShowLinks] = useState(false);
@@ -46,10 +47,13 @@ export default function App() {
                 <h1 className={tw`text-4xl font-regular mb-4`} style={{ userSelect: 'none' }}>Hey there, I'm Olya</h1>
                 <p className={tw`text-s mb-3 opacity-70`} style={{ userSelect: 'none' }}>frontend dev</p>
                 <p className={tw`text-lg mb-3`} style={{ userSelect: 'none' }}>Tbilisi since March 2024</p>
-                <p className={tw`text-lg mb-8`} style={{ userSelect: 'none' }}>Find me on my socials&nbsp;
+                <p className={tw`text-lg mb-8`} style={{ userSelect: 'none' }}>Find me on my socials&nbsp;&nbsp;
                     <button onClick={buttonClick}>
-                        {showLinks ? (<KeyboardArrowDownIcon />)
-                            : (<KeyboardArrowRightIcon />)}
+                        {showLinks ? (
+                            <img src={bottomImage} alt="Close" style={{width: 'auto', height: 'auto', maxHeight: '1.2em' }}  />
+                        ) : (
+                            <img src={rightImage} alt="Open" className='bounce-image' style={{ width: 'auto', height: 'auto', maxHeight: '1.2em' }}  />
+                        )}
                     </button>
                 </p>
                 <div className={tw`text-white flex flex-wrap justify-center`}>

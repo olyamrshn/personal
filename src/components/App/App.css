@@ -8,6 +8,23 @@
     opacity: 1;
 }
 
+@keyframes bounce {
+    0% {
+      transform: translateY(-2px);
+    }
+    50% {
+      transform: translateY(2px);
+    }
+    100% {
+      transform: translateY(-2px);
+    }
+  }
+  
+  .bounce-image {
+    animation: bounce 2s infinite;
+    filter: brightness(300%);
+  }
+
 @media (max-width: 500px) {
     .link-item {
         width: 100%;
