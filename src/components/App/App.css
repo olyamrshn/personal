@@ -20,6 +20,7 @@
     }
   }
   
+
   .bounce-image {
     animation: bounce 2s infinite;
     filter: brightness(300%);

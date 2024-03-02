@@ -3,13 +3,13 @@ import './App.css'
 import AnimatedLink from '../AnimatedLink'
 import { useState, useEffect } from 'react'
 import { faInstagram, faGithub, faSpotify, faTwitter, faGoogle } from '@fortawesome/free-brands-svg-icons'
-import rightImage from '../../images/right.png';
-import bottomImage from '../../images/bottom.png';
+import rightImage from '../../images/right.png'
+import bottomImage from '../../images/bottom.png'
 
 
 export default function App() {
-    const [showLinks, setShowLinks] = useState(false);
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [showLinks, setShowLinks] = useState(false)
+    const [currentIndex, setCurrentIndex] = useState(0)
 
     const links = [
         { icon: faInstagram, text: "instagram", href: "https://www.instagram.com/llleatbabies?igshid=MzRlODBiNWFlZA%3D%3D" },
@@ -41,18 +41,27 @@ export default function App() {
         }
     }, [showLinks]);
 
+
+
     return (
         <div className={tw`font-raleway mt-10 text-center flex items-center justify-center`}>
             <div className={tw`text-white mx-auto max-w-screen-md`}>
-                <h1 className={tw`text-4xl font-regular mb-4`} style={{ userSelect: 'none' }}>Hey there, I'm Olya</h1>
+                <h1 className={tw`text-xl font-regular mb-4`} style={{ userSelect: 'none' }}>Marshennikova Olga</h1>
                 <p className={tw`text-s mb-3 opacity-70`} style={{ userSelect: 'none' }}>frontend dev</p>
-                <p className={tw`text-lg mb-3`} style={{ userSelect: 'none' }}>Tbilisi since March 2024</p>
-                <p className={tw`text-lg mb-8`} style={{ userSelect: 'none' }}>Find me on my socials&nbsp;&nbsp;
+                <p className={tw`text-lg mb-3`} style={{ userSelect: 'none' }}>in Tbilisi since March 2024 🇬🇪</p>
+                <div className={tw`pt-5`}>
+                    <p className={tw`text-base mb-1`} style={{ userSelect: 'none' }}>Hey there! I'm Olya, glad to see you here.</p>
+                    <p className={tw`text-base mb-1`} style={{ userSelect: 'none' }}> Currently updating my portfolio and open to</p>
+                    <p className={tw`text-base mb-1`} style={{ userSelect: 'none' }}>collaborative projects. Soon, I'll be starting work</p>
+                    <p className={tw`text-base mb-1`} style={{ userSelect: 'none' }}>on <a href="https://github.com/marshennikovaolga/dear-diary" className={tw`text-blue-500 hover:underline`}>my diary </a>
+                        and assisting with the <a href="https://github.com/kuskusapp" className={tw`text-blue-500 hover:underline`}>kuskus app</a></p>
+                </div>
+                <p className={tw`text-lg mt-8 mb-8`} style={{ userSelect: 'none' }}>Find me on my socials&nbsp;&nbsp;
                     <button onClick={buttonClick}>
                         {showLinks ? (
-                            <img src={bottomImage} alt="Close" style={{width: 'auto', height: 'auto', maxHeight: '1.2em' }}  />
+                            <img src={bottomImage} alt="Close" style={{ width: 'auto', height: 'auto', maxHeight: '1.2em' }} />
                         ) : (
-                            <img src={rightImage} alt="Open" className='bounce-image' style={{ width: 'auto', height: 'auto', maxHeight: '1.2em' }}  />
+                            <img src={rightImage} alt="Open" className='bounce-image' style={{ width: 'auto', height: 'auto', maxHeight: '1.2em' }} />
                         )}
                     </button>
                 </p>
