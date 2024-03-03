@@ -3,7 +3,7 @@ import './App.css'
 import AnimatedLink from '../AnimatedLink'
 import { useState, useEffect } from 'react'
 import { faInstagram, faGithub, faSpotify, faTwitter, faGoogle }
-from '@fortawesome/free-brands-svg-icons'
+    from '@fortawesome/free-brands-svg-icons'
 import rightImage from '../../images/right.png'
 import bottomImage from '../../images/bottom.png'
 
@@ -51,7 +51,7 @@ export default function App() {
                     <p className={tw`text-base mb-1`}>Hey there! I'm Olya, glad to see you here.</p>
                     <p className={tw`text-base mb-1`}> Currently updating my portfolio and open to</p>
                     <p className={tw`text-base mb-1`}>collaborative projects. Soon, I'll be starting work</p>
-                    <p className={tw`text-base mb-1`}>on <a href="https://dear-diary-7xgdz35mg-marshennikovaolgas-projects.vercel.app/" className={tw`text-blue-500 hover:underline`}>my diary </a>
+                    <p className={tw`text-base mb-1`}>on <a href="dear-diary-eight.vercel.app" className={tw`text-blue-500 hover:underline`}>my diary </a>
                         and assisting with the <a href="https://github.com/kuskusapp" className={tw`text-blue-500 hover:underline`}>kuskus app</a></p>
                 </div>
 
@@ -63,7 +63,7 @@ export default function App() {
                 <p className={tw`text-lg mt-8 mb-8`}>Find me on my socials
                     <button className={tw`ml-5`} onClick={buttonClick}>
                         {showLinks ? (<img src={bottomImage} alt="Close" className={tw`w-auto h-5`} />)
-                        : (<img src={rightImage} alt="Open" className={tw`bounce-image w-auto h-5`} />)}
+                            : (<img src={rightImage} alt="Open" className={tw`bounce-image w-auto h-5`} />)}
                     </button>
                 </p>
                 <div className={tw`text-white flex flex-wrap justify-center`}>
