@@ -51,7 +51,7 @@ export default function App() {
                     <p className={tw`text-base mb-1`}>Hey there! I'm Olya, glad to see you here.</p>
                     <p className={tw`text-base mb-1`}> Currently updating my portfolio and open to</p>
                     <p className={tw`text-base mb-1`}>collaborative projects. Soon, I'll be starting work</p>
-                    <p className={tw`text-base mb-1`}>on <a href="https://github.com/marshennikovaolga/dear-diary" className={tw`text-blue-500 hover:underline`}>my diary </a>
+                    <p className={tw`text-base mb-1`}>on <a href="https://dear-diary-7xgdz35mg-marshennikovaolgas-projects.vercel.app/" className={tw`text-blue-500 hover:underline`}>my diary </a>
                         and assisting with the <a href="https://github.com/kuskusapp" className={tw`text-blue-500 hover:underline`}>kuskus app</a></p>
                 </div>
 
