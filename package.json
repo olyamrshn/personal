@@ -16,11 +16,13 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "cross-spawn": "^7.0.3",
     "emotion": "^11.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "react-scripts": "^5.0.1",
+    "shebang-regex": "^4.0.0",
     "twind": "^0.16.19"
   },
   "browserslist": {

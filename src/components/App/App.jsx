@@ -60,7 +60,7 @@ export default function App() {
                     <p className={tw`text-base opacity-70`}>react native, next.js, graphql</p>
                 </div>
 
-                <p className={tw`text-lg mt-8 mb-8`}>Find me on my socials
+                <p className={tw`text-lg mt-8 mb-4`}>Find me on my socials
                     <button className={tw`ml-5`} onClick={buttonClick}>
                         {showLinks ? (<img src={bottomImage} alt="Close" className={tw`w-auto h-5`} />)
                             : (<img src={rightImage} alt="Open" className={tw`bounce-image w-auto h-5`} />)}
@@ -69,7 +69,7 @@ export default function App() {
                 <div className={tw`text-white flex flex-wrap justify-center`}>
                     {links.map((link, index) => (
                         <div key={index} className={`link-item ${showLinks && index < currentIndex ? 'show' : ''}`}
-                            style={{ marginBottom: '10px' }}>
+                            style={{ marginBottom: '5px' }}>
                             <AnimatedLink
                                 show={true}
                                 index={index}
