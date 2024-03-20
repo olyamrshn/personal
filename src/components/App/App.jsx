@@ -48,11 +48,11 @@ export default function App() {
                 <p className={tw`text-s mb-3 opacity-70`}>frontend dev</p>
                 <p className={tw`text-lg mb-3`}>based in Tbilisi since march 2024 🇬🇪</p>
                 <div className={tw`pt-5`}>
-                    <p className={tw`text-base mb-1`}>Hey there! I'm Olya, glad to see you here.</p>
+                    <p className={tw`text-base mb-1`}>Hey there! I'm Olya</p>
                     <p className={tw`text-base mb-1`}> Currently updating my portfolio and open to</p>
-                    <p className={tw`text-base mb-1`}>collaborative projects. Soon, I'll be starting work</p>
-                    <p className={tw`text-base mb-1`}>on <a href="https://dear-diary-eight.vercel.app/" className={tw`text-blue-500 hover:underline`}>my diary </a>
-                        and assisting with the <a href="https://github.com/kuskusapp" className={tw`text-blue-500 hover:underline`}>kuskus app</a></p>
+                    <p className={tw`text-base mb-1`}>collaborative projects. I'm currently developing</p>
+                    <p className={tw`text-base mb-1`}> functionality for the <a href="https://github.com/kuskusapp" className={tw`text-blue-500 hover:underline`}>Kuskus app,</a> you can check</p>
+                    <p className={tw`text-base mb-2`}> my repo <a href="https://github.com/marshennikovaolga/drag-n-drop" className={tw`text-blue-500 hover:underline`}>here</a></p>
                 </div>
 
                 <div className={tw`mt-3`}>
