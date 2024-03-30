@@ -8,6 +8,10 @@
     opacity: 1;
 }
 
+.link-blue {
+  color: #60A5FA !important;
+}
+
 @keyframes bounce {
     0% {
       transform: translateY(-2px);
@@ -19,7 +23,7 @@
       transform: translateY(-2px);
     }
   }
-  
+
 
   .bounce-image {
     animation: bounce 2s infinite;
