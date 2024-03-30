@@ -90,7 +90,7 @@ export default function App() {
               className="link-blue"
             >
               {" "}
-              Learn Anything app
+              Learn Anything mobile app
             </a>
             .
           </p>
