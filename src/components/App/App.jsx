@@ -91,7 +91,7 @@ export default function App() {
               className="link-blue"
             >
               {" "}
-              Learn Anything app
+              Learn Anything mobile app
             </a>
             .
   Also, sometimes record my thoughts in a diary, you can check it out
