@@ -83,7 +83,8 @@ export default function App() {
             <a href="https://github.com/kuskusapp/kuskus" className="link-blue">
               {" "}
               Kuskus app
-            </a>{" "}
+            </a>{" "}.
+
             and
             <a
               href="https://github.com/learn-anything/learn-anything.xyz/tree/feature/la-135-ios-mobile-app-release-testflight"
@@ -93,6 +94,11 @@ export default function App() {
               Learn Anything app
             </a>
             .
+  Also, sometimes record my thoughts in a diary, you can check it out
+  <a href="https://dear-diary-eight.vercel.app" className="link-blue">
+              {" "}
+              here
+            </a>{" "}.
           </p>
         </div>
         <div className={tw`mt-3`}>
