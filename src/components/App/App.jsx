@@ -25,7 +25,7 @@ export default function App() {
     {
       icon: faGithub,
       text: "github",
-      href: "https://github.com/marshennikovaolga",
+      href: "https://github.com/olyamrshn",
     },
     {
       icon: faTwitter,
