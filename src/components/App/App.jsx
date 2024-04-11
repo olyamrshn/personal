@@ -25,7 +25,7 @@ export default function App() {
     {
       icon: faGithub,
       text: "github",
-      href: "https://github.com/marshennikovaolga",
+      href: "https://github.com/olyamrshn",
     },
     {
       icon: faTwitter,
@@ -83,7 +83,7 @@ export default function App() {
             <a href="https://github.com/kuskusapp/kuskus" className="link-blue">
               {" "}
               Kuskus app
-            </a>.
+            </a>{" "}.
 
             and
             <a
