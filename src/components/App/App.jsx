@@ -55,7 +55,7 @@ export default function App() {
         if (currentIndex < links.length) {
           setCurrentIndex(currentIndex + 1);
         }
-      }, 500);
+      }, 300);
     }
     return () => clearTimeout(timer);
   }, [showLinks, currentIndex, links]);
@@ -68,13 +68,13 @@ export default function App() {
 
   return (
     <div
-    className={tw`text-white mx-auto max-w-sm`}
+    className={tw`text-white mx-auto max-w-sm user-select-none`}
       style={{ userSelect: "none" }}
     >
       <div className={tw`text-white mx-auto max-w-screen-md`}>
-        <h1 className={tw`text-xl font-regular mb-4`}>Marshennikova Olga</h1>
-        <p className={tw`text-s mb-3 opacity-70`}>frontend dev</p>
-        <p className={tw`text-lg mb-3`}>based in Tbilisi since march 2024 🇬🇪</p>
+        <h1 className={tw`text-base font-regular mb-3`}>Marshennikova Olga</h1>
+        <p className={tw`text-sm mb-3 opacity-70`}>frontend dev</p>
+        <p className={tw`text-base mb-3`}>based in Tbilisi, Georgia 🇬🇪</p>
         <div className={tw`pt-5`}>
           <p className={tw`text-base whitespace-pre-line`}>
             Hey there! I'm Olya. Currently updating my portfolio and am keen on
@@ -83,7 +83,7 @@ export default function App() {
             <a href="https://github.com/kuskusapp/kuskus" className="link-blue">
               {" "}
               Kuskus app
-            </a>{" "}.
+            </a>.
 
             and
             <a
@@ -98,17 +98,15 @@ export default function App() {
   <a href="https://dear-diary-eight.vercel.app" className="link-blue">
               {" "}
               here
-            </a>{" "}.
+            </a>.
           </p>
         </div>
         <div className={tw`mt-3`}>
           <p className={tw`text-base mb-2`}>rn i'm studying:</p>
-          <p className={tw`text-base opacity-70`}>
-            typescript, react native, graphql
-          </p>
+          <p className={tw`text-base opacity-70`}>react native, graphql</p>
         </div>
 
-        <p className={tw`text-lg mt-8 mb-4`}>
+        <p className={tw`text-base mt-6 mb-4`}>
           Find me on my socials
           <button className={tw`ml-5`} onClick={buttonClick}>
             {showLinks ? (
