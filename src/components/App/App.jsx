@@ -83,7 +83,7 @@ export default function App() {
             <a href="https://github.com/kuskusapp/kuskus" className="link-blue">
               {" "}
               Kuskus app
-            </a>{" "}.
+            </a>.
 
             and
             <a
