@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.10fa091f.css",
-    "main.js": "/static/js/main.682b73f8.js",
+    "main.js": "/static/js/main.9a2f551d.js",
     "static/media/Raleway-Light.ttf": "/static/media/Raleway-Light.6648e022766877ef6426.ttf",
     "index.html": "/index.html",
     "main.10fa091f.css.map": "/static/css/main.10fa091f.css.map",
-    "main.682b73f8.js.map": "/static/js/main.682b73f8.js.map"
+    "main.9a2f551d.js.map": "/static/js/main.9a2f551d.js.map"
   },
   "entrypoints": [
     "static/css/main.10fa091f.css",
-    "static/js/main.682b73f8.js"
+    "static/js/main.9a2f551d.js"
   ]
 }

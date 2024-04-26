@@ -8,6 +8,7 @@ import {
   faSpotify,
   faTwitter,
   faGoogle,
+  faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 import rightImage from "../../images/right.png";
 import bottomImage from "../../images/bottom.png";
@@ -36,6 +37,11 @@ export default function App() {
       icon: faSpotify,
       text: "spotify",
       href: "https://open.spotify.com/user/awpkpo5yx2t80iqa4tgfvp7a7",
+    },
+    {
+      icon: faDiscord,
+      text: "discord",
+      href: "https://discord.com/users/704485765010161966",
     },
     {
       icon: faGoogle,
