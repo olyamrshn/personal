@@ -85,13 +85,7 @@ export default function App() {
           <p className={tw`text-base whitespace-pre-line`}>
             Hey there! I'm Olya. Currently updating my portfolio and am keen on
             joining collaborative projects. At the moment, developing
-            functionality for the
-            <a href="https://github.com/kuskusapp/kuskus" className="link-blue">
-              {" "}
-              Kuskus app
-            </a>
-            {" "}
-            and
+            functionality for the{" "}
             <a
               href="https://github.com/learn-anything/learn-anything.xyz/tree/feature/la-135-ios-mobile-app-release-testflight"
               className="link-blue"
@@ -99,7 +93,11 @@ export default function App() {
               {" "}
               Learn Anything mobile app
             </a>
-            .
+            {" "}
+            and creating a food sharing network{" "}
+            <a href="https://github.com/kuskusapp/kuskus" className="link-blue">KusKus</a>{" "}
+            for the{" "}
+            <a href="https://hackathon.edgedb.com" className="link-blue">EdgeDB hackathon</a>.
   Also, sometimes record my thoughts in a diary, you can check it out
   <a href="https://dear-diary-eight.vercel.app" className="link-blue">
               {" "}
