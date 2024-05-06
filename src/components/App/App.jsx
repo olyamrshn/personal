@@ -99,7 +99,7 @@ export default function App() {
             for the{" "}
             <a href="https://hackathon.edgedb.com" className="link-blue">EdgeDB hackathon</a>.
   Also, sometimes record my thoughts in a diary, you can check it out
-  <a href="https://dear-diary-eight.vercel.app" className="link-blue">
+  <a href="https://dear-diary.omrshn.dev" className="link-blue">
               {" "}
               here
             </a>
