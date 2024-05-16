@@ -87,7 +87,7 @@ export default function App() {
             joining collaborative projects. At the moment, developing
             functionality for the{" "}
             <a
-              href="https://github.com/learn-anything/learn-anything.xyz/tree/feature/la-135-ios-mobile-app-release-testflight"
+              href="https://github.com/learn-anything/learn-anything.xyz/tree/main/mobile"
               className="link-blue"
             >
               {" "}
