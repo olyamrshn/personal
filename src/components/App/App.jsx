@@ -1,21 +1,20 @@
 import { tw } from "twind";
-import "./App.css";
-import AnimatedLink from "../AnimatedLink";
 import { useState, useEffect } from "react";
-import {
-  faInstagram,
-  faGithub,
-  faSpotify,
-  faTwitter,
-  faGoogle,
-  faDiscord,
-} from "@fortawesome/free-brands-svg-icons";
-import rightImage from "../../images/right.png";
-import bottomImage from "../../images/bottom.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faGithub, faTwitter, faSpotify, faDiscord, faGoogle } from '@fortawesome/free-brands-svg-icons';
+
 
 export default function App() {
-  const [showLinks, setShowLinks] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const items = [
+    { title: "Learn Anything", description: "Learning platform",  url: "https://github.com/learn-anything/learn-anything.xyz" },
+    { title: "KusKus", description: "Food & drink sharing app", url: "https://github.com/kuskusapp/kuskus" },
+    { title: "Solbond", description: "Digital marketplace on Solana", url: "https://github.com/solbond/solbond.so" },
+    { title: "ADL company", description: "Landing page", url: "https://github.com/olyamrshn/turkish-visitors" },
+    { title: "Dear Diary", description: "My diary", url: "https://github.com/olyamrshn/dear-diary" },
+     ]
+
 
   const links = [
     {
@@ -50,32 +49,9 @@ export default function App() {
     },
   ];
 
-  const buttonClick = () => {
-    setShowLinks(!showLinks);
-  };
-
-  useEffect(() => {
-    let timer;
-    if (showLinks) {
-      timer = setTimeout(() => {
-        if (currentIndex < links.length) {
-          setCurrentIndex(currentIndex + 1);
-        }
-      }, 300);
-    }
-    return () => clearTimeout(timer);
-  }, [showLinks, currentIndex, links]);
-
-  useEffect(() => {
-    if (!showLinks) {
-      setCurrentIndex(0);
-    }
-  }, [showLinks]);
-
   return (
     <div
     className={tw`text-white mx-auto max-w-sm user-select-none`}
-      style={{ userSelect: "none" }}
     >
       <div className={tw`text-white mx-auto max-w-screen-md`}>
         <h1 className={tw`text-base font-regular mb-3`}>Marshennikova Olga</h1>
@@ -84,65 +60,32 @@ export default function App() {
         <div className={tw`pt-5`}>
           <p className={tw`text-base whitespace-pre-line`}>
             Hey there! I'm Olya. Currently updating my portfolio and am keen on
-            joining collaborative projects. At the moment, developing
-            functionality for the{" "}
-            <a
-              href="https://github.com/learn-anything/learn-anything.xyz/tree/main/mobile"
-              className="link-blue"
-            >
-              {" "}
-              Learn Anything mobile app
-            </a>
-            {" "}
-            and creating a food sharing network{" "}
-            <a href="https://github.com/kuskusapp/kuskus" className="link-blue">KusKus</a>{" "}
-            for the{" "}
-            <a href="https://hackathon.edgedb.com" className="link-blue">EdgeDB hackathon</a>.
-  Also, sometimes record my thoughts in a diary, you can check it out
-  <a href="https://dear-diary.omrshn.dev" className="link-blue">
-              {" "}
-              here
-            </a>
+            joining collaborative projects.
           </p>
         </div>
-        <div className={tw`mt-3`}>
-          <p className={tw`text-base mb-2`}>rn i'm studying:</p>
-          <p className={tw`text-base opacity-70`}>react native, graphql</p>
-        </div>
-
-        <p className={tw`text-base mt-6 mb-4`}>
-          Find me on my socials
-          <button className={tw`ml-5`} onClick={buttonClick}>
-            {showLinks ? (
-              <img src={bottomImage} alt="Close" className={tw`w-auto h-5`} />
-            ) : (
-              <img
-                src={rightImage}
-                alt="Open"
-                className={tw`bounce-image w-auto h-5`}
-              />
-            )}
-          </button>
-        </p>
-        <div className={tw`text-white flex flex-wrap justify-center`}>
-          {links.map((link, index) => (
-            <div
-              key={index}
-              className={`link-item ${
-                showLinks && index < currentIndex ? "show" : ""
-              }`}
-              style={{ marginBottom: "5px" }}
-            >
-              <AnimatedLink
-                show={true}
-                index={index}
-                icon={link.icon}
-                text={link.text}
-                href={link.href}
-              />
+        {items.map((item, index) => (
+            <div key={index} className={tw`flex flex-col md:flex-row items-center space-x-3 justify-center my-4`}>
+              <h2 className={tw`text-base text-white mb-1`}>
+                <a href={item.url}>
+                  {item.title}
+                </a>
+              </h2>
+              <p className={tw`text-sm md:text-base text-white text-opacity-70`}>{item.description}</p>
             </div>
           ))}
-        </div>
+        <p className={tw`text-base mt-6 mb-4`}>
+          Find me on my socials
+        </p>
+        <div className={tw`text-white text-base flex flex-col md:flex-row space-x-2 items-center justify-center`}>
+  {links.map((link, index) => (
+    <div key={index} className={tw`mx-5 mb-2`}>
+      <a href={link.href} className={tw`flex items-center space-x-2`}>
+        <FontAwesomeIcon icon={link.icon} />
+        <span>{link.text}</span>
+      </a>
+    </div>
+  ))}
+</div>
       </div>
     </div>
   );
