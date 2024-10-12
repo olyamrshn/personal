@@ -56,7 +56,7 @@ export default function App() {
       <div className={tw`text-white mx-auto max-w-screen-md`}>
         <h1 className={tw`text-base font-regular mb-3`}>Marshennikova Olga</h1>
         <p className={tw`text-sm mb-3 opacity-70`}>frontend dev</p>
-        <p className={tw`text-base mb-3`}>based in Tbilisi, Georgia 🇬🇪</p>
+        <p className={tw`text-base mb-3`}>based in Madrid, Spain</p>
         <div className={tw`pt-5`}>
           <p className={tw`text-base whitespace-pre-line`}>
             Hey there! I'm Olya. Currently updating my portfolio and am keen on
