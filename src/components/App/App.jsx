@@ -8,11 +8,12 @@ export default function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const items = [
-    { title: "Learn Anything", description: "Learning platform",  url: "https://github.com/learn-anything/learn-anything.xyz" },
-    { title: "KusKus", description: "Food & drink sharing app", url: "https://github.com/kuskusapp/kuskus" },
-    { title: "Solbond", description: "Digital marketplace on Solana", url: "https://github.com/solbond/solbond.so" },
-    { title: "ADL company", description: "Landing page", url: "https://github.com/olyamrshn/turkish-visitors" },
-    { title: "Dear Diary", description: "My diary", url: "https://github.com/olyamrshn/dear-diary" },
+    { title: "Learn Anything", description: "Learning platform",  url: "https://learn-anything.xyz" },
+    { title: "Zuleika Jewelry", description: "Jewelry website (in progress)", url: "https://zuleika-jewelry.vercel.app" },
+    { title: "Todo Escrow", description: "telegram mini app for TON Paris hackaton", url: "https://t.me/todo_escrow_bot" },
+    { title: "Solbond", description: "Digital marketplace on Solana", url: "https://solbond.co" },
+    { title: "ADL company", description: "Landing page for turkish logistic company", url: "https://adl.group" },
+    { title: "Dear Diary", description: "My diary", url: "https://dear-diary.omrshn.dev" },
      ]
 
 
@@ -59,12 +60,11 @@ export default function App() {
         <p className={tw`text-base mb-3`}>based in Madrid, Spain</p>
         <div className={tw`pt-5`}>
           <p className={tw`text-base whitespace-pre-line`}>
-            Hey there! I'm Olya. Currently updating my portfolio and am keen on
-            joining collaborative projects.
+            Hey there! I'm Olya, frontend developer specializing in React, with a stack including Next JS, TanStack, and React Native.
           </p>
         </div>
         {items.map((item, index) => (
-            <div key={index} className={tw`flex flex-col md:flex-row items-center space-x-3 justify-center my-4`}>
+            <div key={index} className={tw`flex flex-col md:flex-row items-center space-x-3 justify-start my-4`}>
               <h2 className={tw`text-base text-white mb-1`}>
                 <a href={item.url}>
                   {item.title}
